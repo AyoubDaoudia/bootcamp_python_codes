@@ -17,6 +17,8 @@ def words_pythonest(text,n):
     for i in range(j,len(text)):
         if text[i].isalpha():
             c+=text[i]
+            if i==len(text)-1:
+                words.append(c)
         else:
             if (text[i].isspace() and text[i-1].isalpha()) or (text[i] in string.punctuation):
                 words.append(c)

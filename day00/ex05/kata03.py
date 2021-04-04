@@ -8,6 +8,6 @@ Created on Sat Apr  3 18:53:43 2021
 phrase = "The right format"
 
 def kata03(text):
-    print('-'*(40-len(phrase))+ phrase, end="%\n")
+    print('-'*(41-len(phrase))+ phrase, end="\n")
     
 kata03(phrase)
