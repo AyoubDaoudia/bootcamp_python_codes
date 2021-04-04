@@ -18,7 +18,13 @@ while True:
         if num=="exit":
             print("Goodbye!")
             break
-        tries+=1
+        num=int(num)
+    except TypeError :
+        print("That's not a number .")
+    except ValueError :
+        print("That's not a number .")
+    tries+=1
+    if str(num).isdigit():
         if 1<=num<=99:
             if num>secret:
                 print("That is higher !")
@@ -35,7 +41,3 @@ while True:
                     print("Congratulations, you've got it!")
                     print("You won in {} attempts!".format(tries))
                     break
-    except TypeError :
-        print("That's not a number :")
-    except ValueError :
-        print("That's not a number :")
