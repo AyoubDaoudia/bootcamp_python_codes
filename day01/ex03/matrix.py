@@ -1,8 +1,8 @@
 class Matrix:
     def __init__(self,m_info,m_second=None):
-        if type(m_info)==list:
+        if isinstance(m_info,list):
             if len(m_info)>0:
-                if type(m_info[0])==int:
+                if isinstance(m_info[0],int):
                     if isinstance(self,Vector):
                         for i in range (len(m_info)):
                             if type(m_info[i])!=int:
