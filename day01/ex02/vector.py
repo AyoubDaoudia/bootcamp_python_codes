@@ -58,7 +58,7 @@ class Vector:
         else:
             raise TypeError
     def __rsub__(self,second):
-        return Vector.__sub__(self,other)
+        return Vector.__sub__(self,second)
     def __mul__(self,second):
         result=Vector(self.size)
         for i in range(self.size):
@@ -77,7 +77,7 @@ class Vector:
         else:
             raise TypeError
     def __rmul__(self,second):
-        return Vector.__mul__(self,other)
+        return Vector.__mul__(self,second)
     def __truediv__(self,second):
         if type(second)==Vector:
             raise TypeError
