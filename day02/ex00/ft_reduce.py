@@ -2,9 +2,9 @@ import sys
 
 def ft_reduce(func,iterat):
     if not callable(func):
-        raise SystemExit("Please enter a function as the first parameter")
+        sys.exit("Please enter a function as the first parameter")
     if '__iter__' not in dir(iterat):
-        raise SystemExit("Please enter an iterable object as the second argument")
+        sys.exit("Please enter an iterable object as the second argument")
     result=iterat[0]
     for i in iterat[1:]:
         result=func(result,i)

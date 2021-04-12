@@ -1,3 +1,5 @@
+import sys
+
 def what_are_the_vars(*args,**kwargs):
     ind=0
     my_obj=ObjectC()
